@@ -1,38 +1,202 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    background-color: rgb(247, 235, 226);
+}
+.logo{
+    width: 0;
+    height: 0;
+
+}
+.logo img{
+    width: 180px;
+    position: relative;
+    bottom: 130px;
+    right: 400px;
+
+}
+.form-box{
+    background-color: rgba(122, 122, 122, 0.4);
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    width: 500px;
+    height: 80%;
+    border-radius: 20px ;
+}
+.form-box h2{
+    font-size: 30px;
+    text-align: center;
+}
+.form-box p{
+    font-weight: bold;
+    color: #000000;
+}
+.form-box p a{
+    color: #ff6600;
+    text-decoration: none;
+}
+.form-box form{
+    margin: 20px 0;
+}
+form .senha{
+    margin-bottom: 15px;
+}
+form .senha label{
+    color: #000000;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+form .senha input{
+    width: 100%;
+    height: 47px;
+    background-color: #ffff;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #000000;
+    transition: all 0.4s ease;
+    
+}
+form .senha input:focus{
+    border-color: rgba(255, 194, 82, 0.986);
+}
+form .user{
+    margin-bottom: 15px;
+}
+form .user label{
+    color: #000000;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form .user input{
+    width: 100%;
+    height: 47px;
+    background-color:#ffff;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color:#000000;
+    transition: all 0.4s ease;
+}
+form .user input:focus{
+    border-color: rgba(255, 194, 82, 0.986);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+form .senha p{
+    color: #000000;
+    font-size: 12px;
+    display: flex;
+    justify-content:end;
+}
+form .senha p:hover{
+    color: #ff6600;
+    outline: 0;
+}
+form .Entrada button{
+    width: 100%;
+    height: 47px;
+    background: #ff6600;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.Entrada p{
+    display: flex;
+    justify-content: center;
+}
+
+.senha i{
+    font-size: 20px;
+    position: absolute;
+    top: 45%;
+    right: 12%;
+    cursor: pointer;
+    color: #000000;
+    
+}
+.icones {
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center; 
+    display:flex ;
+    position: relative;
+    right: 100px;
+
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  
+  #Icons p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  #Icons a {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    margin: 0 5px;
+    color: #FFF;
+    text-align: center;
+    
   }
+  
+
+  
+  
+@media (max-width:480px) {
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing:border-box;  
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        padding: 0%;
+  
+        
+    }
+    
+    .form-box{
+        width: 80vw;
+        height: 70vh;
+        position: fixed;
+        
+        
+    }
+    .form-box form{
+        margin: 0%;
+    }
+    .senha i{
+        top: 37%;
+        right: 14%;
+    }
+    .form-box h2{
+        padding:30px ;
+    }
 }
